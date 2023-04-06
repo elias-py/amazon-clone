@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider --inspect' next build",
+    "start": "cross-env NODE_OPTIONS='--openssl-legacy-provider --inspect' next start"
   },
   "dependencies": {
     "@heroicons/react": "v1",
